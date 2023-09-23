@@ -126,3 +126,4 @@ If you want more resources on learning the linux command line...
 + Review our [Setup/Terminal Meeting Slides](https://sigpwny.com/meetings/fa2023/2023-09-03/)
 
 ## Cross Site Scripting (XSS)
+
