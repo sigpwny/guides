@@ -24,6 +24,13 @@ Reverse engineering is the process of understanding computer programs. The goal 
 - Languages like assembly and C are lower level
 - As you modify a program to become more abstract (to better understand it), you lose some information in the process
 * Tools
+** Bytecode viewer
+*** Installation
+- see https://github.com/Konloch/bytecode-viewer
+*** When to use
+This program is used to decompile Java files, which usually have the .jar extension
+*** How to use
+Simply import the java jar program into the bytecode viewer and see the decompiled java code! This works by recovering the java code from the compiled java bytecode.
 ** Ghidra
 *** Installation
 - see [[https://sigpwny.com/meetings/fa2023/2023-09-17/][Reverse Engineering Setup]]
