@@ -3,6 +3,7 @@ name: Deploy guide changes to sigpwny/websites
 on:
   push:
     paths:
+      - '*/**'
       - '!./README.md'
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
