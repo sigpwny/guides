@@ -58,7 +58,7 @@ Nowadays, you can see why this is very insecure. There are only 26 possible shif
 
 ### XOR and One-Time-Pads
 One of the most basic modern cryptographic tools is the Exclusive-Or operation, also called XOR. In math it gets denoted
-by $x \oplus y$, while in code we use `x ^ y`.
+by `x ⊕ y`, while in code we use `x ^ y`.
 If $x$ and $y$ are 2 bits (0 or 1), `x ^ y` is defined to be one if and only if one of `x` or `y` is 1, but not both. Another way to think about it is that the XOR returns `1` if the bits are different:
 
 | x | y | x^y |
@@ -85,7 +85,7 @@ Modular arithmetic is much more useful than what was previously advertised when 
 
 Interestingly enough, RSA is an *assymetric* encryption instead of a symmetric one. This means the sender of a message does not have to know the secret key to be able to successfully encrypt a message. The math almost magically seems to work out! The goal of challenges like this will be to try to identify some, or all, of the secret information to be able decrypt the flag.
 
-The first step is that two large (and i mean *large*) primes `p` and `q` are chosen. Then, a value `n = pq` is computed. Everyone in the world is allowed to know this `n`, but `p, q` are kept secret. Furthermore, the world is given access to an exponent, `e`. For many reasons (most of which are unimportant for now), usually we select $e = 2^{16} + 1 = 65537$. Another secret value `φ = (p-1)(q-1)` is completed, and `d` such that `ed == 1 mod φ`. In python, you can easily calculate this with 
+The first step is that two large (and i mean *large*) primes `p` and `q` are chosen. Then, a value `n = pq` is computed. Everyone in the world is allowed to know this `n`, but `p, q` are kept secret. Furthermore, the world is given access to an exponent, `e`. For many reasons (most of which are unimportant for now), usually we select `e = 2**(16) + 1 = 65537`. Another secret value `φ = (p-1)(q-1)` is completed, and `d` such that `ed == 1 mod φ`. In python, you can easily calculate this with 
 `d = pow(e, -1, φ)`. Afterwards, the ciphertext `c` can be computed with our public information:
 $$c = m^e \mod n$$
 And decryption is done with `d`, so 
