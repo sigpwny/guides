@@ -59,7 +59,7 @@ Nowadays, you can see why this is very insecure. There are only 26 possible shif
 ### XOR and One-Time-Pads
 One of the most basic modern cryptographic tools is the Exclusive-Or operation, also called XOR. In math it gets denoted
 by `x ⊕ y`, while in code we use `x ^ y`.
-If $x$ and $y$ are 2 bits (0 or 1), `x ^ y` is defined to be one if and only if one of `x` or `y` is 1, but not both. Another way to think about it is that the XOR returns `1` if the bits are different:
+If `x` and `y` are 2 bits (0 or 1), `x ^ y` is defined to be one if and only if one of `x` or `y` is 1, but not both. Another way to think about it is that the XOR returns `1` if the bits are different:
 
 | x | y | x^y |
 |---|---|-----|
