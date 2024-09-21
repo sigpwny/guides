@@ -108,7 +108,7 @@ $$m = c^d \mod n$$
 
 [CyberChef](https://gchq.github.io/CyberChef/): For Text manipulation, processing, ciphers, encoding, and even basic cracking
 
-[FeatherDuster](https://github.com/nccgroup/featherduster): For Cipher identification
+[FeatherDuster](https://github.com/nccgroup/featherduster): For Cipher identification, this is your "Crypto Recon" tool.
 
 [dCode](https://www.dcode.fr/tools-list#cryptography): Has a lot of readily available encryption/decryption solutions
 
