@@ -125,5 +125,22 @@ If you want more resources on learning the linux command line...
 
 + Review our [Setup/Terminal Meeting Slides](https://sigpwny.com/meetings/fa2023/2023-09-03/)
 
-## Cross Site Scripting (XSS)
+## Cross-Site Scripting (XSS)
 
+Cross-Site Scripting is a vulnerability that allows an attacker to execute malicious scripts on a website. This can be used to steal cookies, redirect users to malicious websites, or deface the website.
+
+I like to think of XSS as as another type of injection attack, but instead of injecting into a database or command line, you're injecting into the website's HTML.
+
+For example, let's say you have a website that displays a user's name on the page. If the website includes the input directly into the HTML, you can put your own HTML code in the input and have it execute on the page.
+
+```html
+<p>Welcome, <span id="username">USER INPUT</span></p>
+```
+
+If I had set `USER INPUT` to `<script>alert("Hello!")</script>`, then the website would display a popup saying "Hello!".
+
+```html
+<p>Welcome, <span id="username"><script>alert("Hello!")</script></span></p>
+```
+
+More details on XSS: https://portswigger.net/web-security/cross-site-scripting
