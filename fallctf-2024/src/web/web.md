@@ -147,7 +147,7 @@ More details on XSS: https://portswigger.net/web-security/cross-site-scripting
 
 A useful resource for receiving requests is [webhook.site](https://webhook.site/). For example, if you need to extract some data from a website, you can have your XSS payload send a request to your webhook.site URL with the data you need.
 
-Be careful when exfiltrating data to make sure the data on the page you are trying to extract is actually loaded.
+Be careful when exfiltrating data to make sure the data on the page you are trying to extract is actually loaded. Also, make sure to go to `edit` and enable `Add CORS Headers` to allow the admin's browser to make requests to the site.
 
 ```js
 window.addEventListener('load', () => {
