@@ -70,7 +70,7 @@ You can use [CyberChef](https://gchq.github.io/CyberChef/) to decode many common
 
 ## Overriding Web Content
 
-Sometimes, you'll want to manually override some parts of a webpage's contents in order to make debugging easier. Follow [Google Chrome's documentation "Override web content and HTTP response headers locally"](https://developer.chrome.com/docs/DevTools/overrides) for the specifics of how to override scripts and files.
+Sometimes, you'll want to manually override some parts of a webpage's contents in order to make debugging easier. Follow [Google Chrome's documentation "Override web content and HTTP response headers locally"](https://developer.chrome.com/docs/devtools/overrides) for the specifics of how to override scripts and files.
 ### Why would I want to do this?
 
 Often websites have security checks on the client rather than on the server. This is insecure because the client "owns" the scripts running on their machines and can modify them as they see fit.
